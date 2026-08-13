@@ -15,4 +15,4 @@ __pycache__/
 .vscode/
 
 # ChromaDB
-memory_db/
+memory_db/memory_db/
