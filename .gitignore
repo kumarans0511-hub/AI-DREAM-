@@ -13,3 +13,6 @@ __pycache__/
 
 # VS Code
 .vscode/
+
+# ChromaDB
+memory_db/
