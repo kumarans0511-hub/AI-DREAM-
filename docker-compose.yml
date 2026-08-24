@@ -1,0 +1,41 @@
+services:
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+
+    container_name: dream_backend
+
+    ports:
+      - "8000:8000"
+
+    environment:
+      - CHROMA_DOWNLOAD_TIMEOUT=300
+      - OLLAMA_URL=http://host.docker.internal:11434
+
+    volumes:
+      - dream_chroma_data:/app/memory_db
+      - ./datasets:/app/datasets:ro
+
+
+  frontend:
+    build:
+      context: ./frontend/dream-frontend
+      dockerfile: Dockerfile
+
+    container_name: dream_frontend
+
+    ports:
+      - "5173:5173"
+
+    depends_on:
+      - backend
+
+    volumes:
+      - ./frontend/dream-frontend:/app
+      - /app/node_modules
+
+volumes:
+  dream_chroma_data:
+    external: true

@@ -108,6 +108,7 @@ class MemoryReflector:
         self.dry_run = dry_run
         self.similarity_threshold = similarity_threshold
         self.duplicate_threshold = duplicate_threshold
+        self.client = ollama.Client(host="http://host.docker.internal:11434")
 
     # =========================================================================
     # STAGE 1: Candidate Memory Retrieval
@@ -164,16 +165,8 @@ class MemoryReflector:
         )
 
         try:
-            response = ollama.chat(
-                model=self.model,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ]
-            )
-            raw_content = response["message"]["content"]
+            from backend.app.core.llm import generate_response
+            raw_content = generate_response(prompt, prefer_gemini=True)
             return self._parse_reflection_json(raw_content)
 
         except Exception as e:

@@ -1,0 +1,21 @@
+{
+  "metrics": {
+    "total_examples": 1,
+    "successfully_processed": 1,
+    "failed_examples": 0,
+    "answer_accuracy": 0.0,
+    "avg_retrieved_memories": 3.0
+  },
+  "results": [
+    {
+      "sample_id": "gpt4_2655b836",
+      "question_type": "temporal-reasoning",
+      "question": "What was the first issue I had with my new car after its first service?",
+      "expected_answer": "GPS system not functioning correctly",
+      "prediction": "Let me see if I can help you recall. Wasn't it something about improving your gas mileage? I remember you were interested in tips on how to increase it after we discussed that previously. Am I right?",
+      "is_correct": false,
+      "num_retrieved_memories": 3,
+      "status": "success"
+    }
+  ]
+}

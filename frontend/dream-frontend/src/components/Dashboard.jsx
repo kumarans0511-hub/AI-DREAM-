@@ -18,7 +18,7 @@ function Dashboard() {
 
     try {
       const [memRes, dreamRes] = await Promise.all([
-        fetch("/memories?query=user memories personal preferences"),
+        fetch("/memories/all"),
         fetch("/dream/status"),
       ])
 
@@ -120,8 +120,8 @@ function Dashboard() {
             loading || !dreamStatus
               ? "—"
               : dreamStatus.is_running
-              ? "● Active"
-              : "○ Stopped"
+                ? "● Active"
+                : "○ Stopped"
           }
           accent={
             dreamStatus && dreamStatus.is_running ? "#67d8a9" : "#929292"
@@ -176,9 +176,8 @@ function Dashboard() {
               <div className="dash-dream-field">
                 <span className="dash-field-label">Status</span>
                 <span
-                  className={`dash-field-value ${
-                    dreamStatus.is_running ? "active" : ""
-                  }`}
+                  className={`dash-field-value ${dreamStatus.is_running ? "active" : ""
+                    }`}
                 >
                   {dreamStatus.is_running ? "● Running" : "○ Stopped"}
                 </span>

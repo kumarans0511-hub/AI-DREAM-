@@ -1,16 +1,326 @@
-* {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ───────────────────────────────────────────────────────────────────────────
+   CSS Custom Properties — Donezo Green Theme
+   ─────────────────────────────────────────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg-base:       #F5F6F8;
+  --bg-surface:    #FFFFFF;
+  --bg-card:       #FFFFFF;
+  --bg-elevated:   #F9FAFB;
+
+  /* Brand Greens */
+  --brand-dark:    #1A5632;
+  --brand-primary: #2EA76D;
+  --brand-light:   #E7F4EB;
+  --brand-accent:  #F59E0B;
+
+  /* Text */
+  --text-primary:   #1F2937;
+  --text-secondary: #6B7280;
+  --text-muted:     #9CA3AF;
+  --text-inverse:   #FFFFFF;
+
+  /* Borders */
+  --border:       #E5E7EB;
+  --border-hover: #D1D5DB;
+
+  /* Sidebar */
+  --sidebar-w-collapsed: 80px;
+  --sidebar-w-expanded:  260px;
+  --sidebar-transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Radius */
+  --radius-card:   16px;
+  --radius-panel:  20px;
+  --radius-sm:     10px;
+
+  /* Legacy aliases */
+  --background: var(--bg-base);
+  --foreground: var(--text-primary);
+  --muted: var(--bg-surface);
+  --muted-foreground: var(--text-secondary);
 }
 
-html,
-body,
-#root {
-  width: 100%;
-  min-width: 0;
-  min-height: 100%;
-  margin: 0;
+/* ───────────────────────────────────────────────────────────────────────────
+   Base Reset
+   ─────────────────────────────────────────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    overflow: hidden;
+  }
+
+  #root {
+    overflow: hidden;
+  }
 }
 
-body {
-  margin: 0;
+/* ───────────────────────────────────────────────────────────────────────────
+   Utility Components
+   ─────────────────────────────────────────────────────────────────────────── */
+@layer components {
+
+  /* ── Cards ── */
+  .surface-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-card);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .glass-card, .solid-card, .dark-card {
+    @apply surface-card;
+  }
+
+  .glass-card-hover {
+    @apply surface-card transition-all duration-200;
+  }
+  .glass-card-hover:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+    transform: translateY(-2px);
+  }
+
+  .glass-panel {
+    background: var(--bg-card);
+    border-radius: var(--radius-panel);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  /* ── Sidebar Nav ── */
+  .sidebar-nav-item {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 cursor-pointer relative;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .sidebar-nav-item:hover {
+    background: var(--brand-light);
+    color: var(--brand-dark);
+  }
+  .sidebar-nav-item.active {
+    background: var(--brand-dark);
+    color: var(--text-inverse);
+    font-weight: 600;
+  }
+
+  /* ── Buttons ── */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-200;
+    background: var(--brand-dark);
+    color: var(--text-inverse);
+    box-shadow: 0 4px 14px rgba(26, 86, 50, 0.25);
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: #113F24;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(26, 86, 50, 0.35);
+  }
+  .btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full font-medium text-sm transition-all duration-200;
+    color: var(--text-secondary);
+    background: var(--bg-card);
+    border: 1.5px solid var(--border);
+  }
+  .btn-ghost:hover {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    border-color: var(--border-hover);
+  }
+
+  .btn-brand-outline {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-200;
+    color: var(--brand-dark);
+    background: transparent;
+    border: 1.5px solid var(--brand-dark);
+  }
+  .btn-brand-outline:hover {
+    background: var(--brand-light);
+  }
+
+  /* ── Form Inputs ── */
+  .dream-input {
+    @apply w-full rounded-xl px-4 py-2.5 text-sm transition-all duration-200 outline-none;
+    background: var(--bg-base);
+    border: 1.5px solid var(--border);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+  }
+  .dream-input::placeholder {
+    color: var(--text-muted);
+  }
+  .dream-input:focus {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 3px rgba(46, 167, 109, 0.12);
+  }
+
+  .dream-select {
+    @apply dream-input cursor-pointer;
+    appearance: none;
+  }
+
+  /* ── Progress Bar ── */
+  .dream-progress {
+    @apply w-full h-2 rounded-full overflow-hidden;
+    background: var(--bg-base);
+  }
+  .dream-progress-fill {
+    @apply h-full rounded-full transition-all duration-500;
+    background: var(--brand-primary);
+  }
+
+  /* ── Section Label ── */
+  .section-label {
+    @apply text-xs font-bold uppercase tracking-wider;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+  }
+
+  /* ── Skeleton ── */
+  .skeleton {
+    @apply rounded-xl animate-pulse;
+    background: var(--border);
+  }
+
+  /* ── Code Text ── */
+  .mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ── Divider ── */
+  .dream-divider {
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── Badge ── */
+  .badge-ok {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold;
+    background: var(--brand-light);
+    color: var(--brand-dark);
+  }
+
+  .badge-count {
+    @apply inline-flex items-center justify-center rounded-full text-[10px] font-bold;
+    background: var(--brand-primary);
+    color: white;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+  }
+
+  /* ── Status Chip ── */
+  .status-online {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold;
+    background: var(--brand-light);
+    color: var(--brand-dark);
+  }
+  .status-offline {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold;
+    background: #FEE2E2;
+    color: #991B1B;
+  }
+
+  /* ── Metric Card ── */
+  .metric-card {
+    @apply surface-card p-5 flex flex-col gap-3;
+  }
+
+  /* ── Top-bar search ── */
+  .topbar-search {
+    @apply flex items-center gap-2 px-4 py-2 rounded-xl text-sm;
+    background: var(--bg-base);
+    border: 1.5px solid var(--border);
+    color: var(--text-muted);
+    min-width: 220px;
+  }
+
+  /* ── Top-bar dropdown panel ── */
+  .topbar-dropdown {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 20px 48px rgba(0,0,0,0.14), 0 4px 12px rgba(0,0,0,0.08);
+    animation: fadeInUp 0.18s ease;
+    overflow: hidden;
+  }
+}
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Scrollbar
+   ─────────────────────────────────────────────────────────────────────────── */
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--border-hover);
+  }
+}
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Animations
+   ─────────────────────────────────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse-ring {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(46,167,109,0.4); }
+  50%       { box-shadow: 0 0 0 8px rgba(46,167,109,0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.3s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out both;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

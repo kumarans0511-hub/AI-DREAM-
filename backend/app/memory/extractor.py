@@ -1,8 +1,5 @@
-from email import message
-import json
 import ollama
-
-from backend.app.core.prompts import MEMORY_EXTRACTION_PROMPT
+import json
 
 
 class MemoryExtractor:
@@ -10,12 +7,41 @@ class MemoryExtractor:
     def __init__(self):
         self.model = "llama3.1"
 
-    def extract(self, message):
-        prompt = MEMORY_EXTRACTION_PROMPT.format(
-            message=message
+        # Docker-compatible Ollama connection
+        self.client = ollama.Client(
+            host="http://host.docker.internal:11434"
         )
 
-        response = ollama.chat(
+    def extract(self, message: str):
+
+        prompt = f"""
+You are a memory extraction system.
+
+Analyze the user message and extract important long-term memories.
+
+Return ONLY valid JSON.
+
+Rules:
+- Extract only useful information that should be remembered.
+- Ignore casual conversation.
+- Categories can be:
+  Personal, Preferences, Interests, Relationships, Pets, Work, Education, Other.
+
+Format:
+
+[
+    {{
+        "memory": "memory statement",
+        "category": "category"
+    }}
+]
+
+User message:
+
+{message}
+"""
+
+        response = self.client.chat(
             model=self.model,
             messages=[
                 {
@@ -25,23 +51,11 @@ class MemoryExtractor:
             ]
         )
 
-        text = response["message"]["content"]
-
-        print("\n===== RAW LLM OUTPUT =====")
-        print(text)
-        print("==========================\n")
+        content = response["message"]["content"]
 
         try:
-            start = text.find("[")
-            end = text.rfind("]") + 1
+            memories = json.loads(content)
+        except json.JSONDecodeError:
+            memories = []
 
-            if start == -1 or end == 0:
-                return []
-
-            json_text = text[start:end]
-
-            return json.loads(json_text)
-
-        except Exception as e:
-            print("Memory Extraction Error:", e)
-            return []
+        return memories

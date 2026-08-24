@@ -1,125 +1,59 @@
-import { useState, useEffect } from "react"
-import "./App.css"
-import StatsCards from "./components/StatsCards"
-import CognitiveTimeline from "./components/CognitiveTimeline"
-import ChatPage from "./components/ChatPage"
-import MemorySearch from "./components/MemorySearch"
-import ReflectionPanel from "./components/ReflectionPanel"
-import DreamResult from "./components/DreamResult"
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { SidebarProvider } from './context/SidebarContext';
+import CommandPalette from './components/CommandPalette';
+import MainLayout from './components/layout/MainLayout';
+import Dashboard from './pages/Dashboard';
+import MemoryExplorer from './pages/MemoryExplorer';
+import MemoryGraph from './pages/MemoryGraph';
+import DreamEngine from './pages/DreamEngine';
+import Reflections from './pages/Reflections';
+import Forgetting from './pages/Forgetting';
+import Analytics from './pages/Analytics';
+import Conversation from './pages/Conversation';
+import Settings from './pages/Settings';
+import Datasets from './pages/Datasets';
+import Profile from './pages/Profile';
 
 function App() {
-  const [memories, setMemories] = useState([])
-  const [dreamStatus, setDreamStatus] = useState(null)
-  const [loading, setLoading] = useState(true)
+  const [palettteOpen, setPaletteOpen] = useState(false);
 
+  // Global ⌘K / Ctrl+K handler
   useEffect(() => {
-    fetchDashboardData()
-  }, [])
-
-  async function fetchDashboardData() {
-    setLoading(true)
-
-    try {
-      const [memRes, dreamRes] = await Promise.all([
-        fetch("/memories?query=user memories personal preferences"),
-        fetch("/dream/status"),
-      ])
-
-      if (memRes.ok) {
-        const data = await memRes.json()
-        setMemories(data.memories || [])
+    const handler = (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        setPaletteOpen(prev => !prev);
       }
-
-      if (dreamRes.ok) {
-        setDreamStatus(await dreamRes.json())
-      }
-    } catch {
-      // Best-effort fetch
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  async function refreshDreamStatus() {
-    try {
-      const res = await fetch("/dream/status")
-      if (res.ok) {
-        setDreamStatus(await res.json())
-      }
-    } catch {
-      // Silently fail
-    }
-    // Also refresh memories after a dream cycle
-    try {
-      const res = await fetch("/memories?query=user memories personal preferences")
-      if (res.ok) {
-        const data = await res.json()
-        setMemories(data.memories || [])
-      }
-    } catch {
-      // Silently fail
-    }
-  }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, []);
 
   return (
-    <div className="app">
-      {/* ── Header ── */}
-      <header className="topbar">
-        <div className="topbar-left">
-          <span className="topbar-brand">🧠 DREAM</span>
-          <span className="topbar-tagline">
-            Dynamic Recall &amp; Evolving AI Memory
-          </span>
-        </div>
-        <div className="topbar-right">
-          <button
-            className="topbar-refresh"
-            onClick={fetchDashboardData}
-            disabled={loading}
-          >
-            ↻ Refresh
-          </button>
-          <span className="topbar-status">● System Online</span>
-        </div>
-      </header>
+    <BrowserRouter>
+      <SidebarProvider>
+        {/* Command Palette — outside router context but inside BrowserRouter for navigate() */}
+        <CommandPalette open={palettteOpen} onClose={() => setPaletteOpen(false)} />
 
-      {/* ── Stats Bar ── */}
-      <section className="stats-section">
-        <StatsCards
-          memories={memories}
-          dreamStatus={dreamStatus}
-          loading={loading}
-        />
-      </section>
-
-      {/* ── Main 3-Column Layout ── */}
-      <div className="dashboard-grid">
-        {/* Left Column */}
-        <aside className="col-left">
-          <CognitiveTimeline />
-        </aside>
-
-        {/* Center Column */}
-        <main className="col-center">
-          <ChatPage />
-        </main>
-
-        {/* Right Column */}
-        <aside className="col-right">
-          <MemorySearch />
-          <ReflectionPanel memories={memories} />
-        </aside>
-      </div>
-
-      {/* ── Bottom: Dream Engine ── */}
-      <section className="bottom-section">
-        <DreamResult
-          dreamStatus={dreamStatus}
-          onStatusRefresh={refreshDreamStatus}
-        />
-      </section>
-    </div>
-  )
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="memory-explorer" element={<MemoryExplorer />} />
+            <Route path="memory-graph" element={<MemoryGraph />} />
+            <Route path="dream-engine" element={<DreamEngine />} />
+            <Route path="reflections" element={<Reflections />} />
+            <Route path="forgetting" element={<Forgetting />} />
+            <Route path="analytics" element={<Analytics />} />
+            <Route path="conversation" element={<Conversation />} />
+            <Route path="settings" element={<Settings />} />
+            <Route path="datasets" element={<Datasets />} />
+            <Route path="profile" element={<Profile />} />
+          </Route>
+        </Routes>
+      </SidebarProvider>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

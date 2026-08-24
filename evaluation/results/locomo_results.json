@@ -1,0 +1,1112 @@
+{
+  "metrics": {
+    "total_examples": 149,
+    "successfully_processed": 11,
+    "failed_examples": 138,
+    "answer_accuracy": 0.0,
+    "avg_retrieved_memories": 0.0
+  },
+  "results": [
+    {
+      "sample_id": "conv-26",
+      "qa_index": 0,
+      "question": "When did Caroline go to the LGBTQ support group?",
+      "expected_answers": [
+        "7 May 2023"
+      ],
+      "prediction": "I don't recall any information about Caroline attending an LGBTQ support group. Would you like me to help with something else?",
+      "is_correct": false,
+      "num_retrieved_memories": 0,
+      "status": "success"
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 1,
+      "question": "When did Melanie paint a sunrise?",
+      "expected_answers": [
+        2022
+      ],
+      "prediction": "I'm happy to help! I seem to recall that you and Melanie went on a painting trip together last year, where she painted several beautiful landscapes. If memory serves, she was particularly proud of her sunset (not sunrise) piece, which captured the vibrant colors of the setting sun. Was that one in particular what you were thinking of?",
+      "is_correct": false,
+      "num_retrieved_memories": 0,
+      "status": "success"
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 2,
+      "question": "What fields would Caroline be likely to pursue in her education?",
+      "expected_answers": [
+        "Counseling or mental health"
+      ],
+      "prediction": "I've noticed that Caroline was interested in environmental conservation during our previous conversations. Given that, she might consider pursuing fields such as sustainability studies, ecology, biology, or even a related field like environmental engineering or policy.\n\nHowever, if we consider other interests and strengths I'm aware of, she may also be inclined towards the arts, particularly creative writing, graphic design, or even architecture. These pursuits often require an understanding of human behavior, aesthetics, and problem-solving skills, which Caroline has demonstrated in our conversations.\n\nWhat are your thoughts? Do you think any of these options align with her interests and abilities?",
+      "is_correct": false,
+      "num_retrieved_memories": 0,
+      "status": "success"
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 3,
+      "question": "What did Caroline research?",
+      "expected_answers": [
+        "Adoption agencies"
+      ],
+      "prediction": "I recall discussing various topics with you previously, but I don't think we specifically discussed Caroline's research. Would you like to tell me more about what you're referring to or is there something else I can help you with?",
+      "is_correct": false,
+      "num_retrieved_memories": 0,
+      "status": "success"
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 4,
+      "question": "What is Caroline's identity?",
+      "expected_answers": [
+        "Transgender woman"
+      ],
+      "prediction": "I'm happy to help you with that! Unfortunately, I don't have any information about who Caroline is or what her identity might be. Can you provide more context or tell me more about Caroline? That way, I can try to help you better.",
+      "is_correct": false,
+      "num_retrieved_memories": 0,
+      "status": "success"
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 5,
+      "question": "When did Melanie run a charity race?",
+      "expected_answers": [
+        "The saturday before 25 May 2023",
+        "May 20, 2023"
+      ],
+      "prediction": "Let me think for a moment... I believe Melanie participated in a 5K charity run last spring to support her favorite children's hospital. Was that the one you were thinking of?",
+      "is_correct": false,
+      "num_retrieved_memories": 0,
+      "status": "success"
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 6,
+      "question": "When is Melanie planning on going camping?",
+      "expected_answers": [
+        "June 2023"
+      ],
+      "prediction": "I think Melanie mentioned to me earlier this week that she's planning to go camping with her friends next Saturday. Would you like me to remind her of any other details or arrangements?",
+      "is_correct": false,
+      "num_retrieved_memories": 0,
+      "status": "success"
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 7,
+      "question": "What is Caroline's relationship status?",
+      "expected_answers": [
+        "Single"
+      ],
+      "prediction": "I'm not aware of any information about Caroline. This is our first conversation and I don't have any context about her. Would you like to tell me more about who Caroline is or what you're looking for?",
+      "is_correct": false,
+      "num_retrieved_memories": 0,
+      "status": "success"
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 8,
+      "question": "When did Caroline give a speech at a school?",
+      "expected_answers": [
+        "The week before 9 June 2023",
+        "From May 29, 2023 to June 4, 2023"
+      ],
+      "prediction": "I'm not sure I have enough information to answer your question. When did Caroline give a speech? Was it recently, or is this something from the past that you're thinking of?",
+      "is_correct": false,
+      "num_retrieved_memories": 0,
+      "status": "success"
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 9,
+      "question": "When did Caroline meet up with her friends, family, and mentors?",
+      "expected_answers": [
+        "The week before 9 June 2023",
+        "From May 29, 2023 to June 4, 2023"
+      ],
+      "prediction": "I'm not aware of any information about Caroline meeting up with her friends, family, or mentors. This is our first conversation and I don't have any prior knowledge about a person named Caroline. If you'd like to share more context or details about what you're referring to, I'd be happy to try and help!",
+      "is_correct": false,
+      "num_retrieved_memories": 0,
+      "status": "success"
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 10,
+      "question": "How long has Caroline had her current group of friends for?",
+      "expected_answers": [
+        "4 years"
+      ],
+      "prediction": "Let me think... I'm not sure how much information we've discussed about Caroline's life, but if I recall correctly, you mentioned that Caroline had recently moved to a new school and was trying to make new connections. That might be relevant to answering your question! \n\nIf I remember correctly, it's been around 6 months since she started at the new school... But I could be mistaken. Do you want me to try and recall more about her situation?",
+      "is_correct": false,
+      "num_retrieved_memories": 0,
+      "status": "success"
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 0,
+      "question": "When did Caroline go to the LGBTQ support group?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 1,
+      "question": "When did Melanie paint a sunrise?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 2,
+      "question": "What fields would Caroline be likely to pursue in her education?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 3,
+      "question": "What did Caroline research?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 4,
+      "question": "What is Caroline's identity?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 5,
+      "question": "When did Melanie run a charity race?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 6,
+      "question": "When is Melanie planning on going camping?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 7,
+      "question": "What is Caroline's relationship status?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 8,
+      "question": "When did Caroline give a speech at a school?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 9,
+      "question": "When did Caroline meet up with her friends, family, and mentors?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 10,
+      "question": "How long has Caroline had her current group of friends for?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 11,
+      "question": "Where did Caroline move from 4 years ago?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 12,
+      "question": "How long ago was Caroline's 18th birthday?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 13,
+      "question": "What career path has Caroline decided to persue?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 14,
+      "question": "When did Melanie sign up for a pottery class?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 15,
+      "question": "When is Caroline going to the transgender conference?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 16,
+      "question": "Where has Melanie camped?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 17,
+      "question": "When did Melanie go to the museum?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 18,
+      "question": "When did Caroline have a picnic?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 19,
+      "question": "Would Caroline likely have Dr. Seuss books on her bookshelf?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 20,
+      "question": "When did Caroline go to the LGBTQ conference?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 21,
+      "question": "Would Caroline pursue writing as a career option?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 22,
+      "question": "When did Caroline go to the adoption meeting?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 23,
+      "question": "When did Melanie go to the pottery workshop?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 24,
+      "question": "Would Melanie be considered a member of the LGBTQ community?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 25,
+      "question": "When did Melanie go camping in June?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 26,
+      "question": "When did Melanie go camping in July?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 27,
+      "question": "When did Caroline join a mentorship program?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 28,
+      "question": "What did Melanie paint recently?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 29,
+      "question": "In what ways is Caroline participating in the LGBTQ community?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 30,
+      "question": "How many times has Melanie gone to the beach in 2023?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 31,
+      "question": "When did Caroline join a new activist group?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 32,
+      "question": "Would Melanie be more interested in going to a national park or a theme park?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 33,
+      "question": "When is Melanie's daughter's birthday?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 34,
+      "question": "When did Caroline attend a pride parade in August?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 35,
+      "question": "Would Melanie be considered an ally to the transgender community?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 36,
+      "question": "Who supports Caroline when she has a negative experience?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 37,
+      "question": "When did Caroline and Melanie go to a pride fesetival together?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 38,
+      "question": "What are Melanie's pets' names?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 39,
+      "question": "When did Caroline apply to adoption agencies?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 40,
+      "question": "When did Caroline draw a self-portrait?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 41,
+      "question": "What subject have Caroline and Melanie both painted?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 42,
+      "question": "What symbols are important to Caroline?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 43,
+      "question": "When did Caroline encounter people on a hike and have a negative experience?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 44,
+      "question": "When did Melanie make a plate in pottery class?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 45,
+      "question": "What instruments does Melanie play?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 46,
+      "question": "What musical artists/bands has Melanie seen?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 47,
+      "question": "When did Melanie go to the park?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 48,
+      "question": "When is Caroline's youth center putting on a talent show?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 49,
+      "question": "Would Melanie likely enjoy the song \"The Four Seasons\" by Vivaldi?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 50,
+      "question": "What are some changes Caroline has faced during her transition journey?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 51,
+      "question": "What does Melanie do with her family on hikes?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 52,
+      "question": "When did Caroline go biking with friends?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 53,
+      "question": "How long has Melanie been practicing art?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 54,
+      "question": "What transgender-specific events has Caroline attended?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 55,
+      "question": "What book did Melanie read from Caroline's suggestion?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 56,
+      "question": "When did Melanie's friend adopt a child?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 57,
+      "question": "When did Melanie get hurt?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 58,
+      "question": "When did Melanie's family go on a roadtrip?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 59,
+      "question": "How many children does Melanie have?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 60,
+      "question": "When did Melanie go on a hike after the roadtrip?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 61,
+      "question": "Would Melanie go on another roadtrip soon?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 62,
+      "question": "What items has Melanie bought?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 63,
+      "question": "When did Caroline pass the adoption interview?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 64,
+      "question": "When did Melanie buy the figurines?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 65,
+      "question": "Would Caroline want to move back to her home country soon?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 66,
+      "question": "What did the charity race raise awareness for?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 67,
+      "question": "What did Melanie realize after the charity race?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 68,
+      "question": "How does Melanie prioritize self-care?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 69,
+      "question": "What are Caroline's plans for the summer?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 70,
+      "question": "What type of individuals does the adoption agency Caroline is considering support?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 71,
+      "question": "Why did Caroline choose the adoption agency?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 72,
+      "question": "What is Caroline excited about in the adoption process?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 73,
+      "question": "What does Melanie think about Caroline's decision to adopt?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 74,
+      "question": "How long have Mel and her husband been married?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 75,
+      "question": "What does Caroline's necklace symbolize?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 76,
+      "question": "What country is Caroline's grandma from?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 77,
+      "question": "What was grandma's gift to Caroline?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 78,
+      "question": "What is Melanie's hand-painted bowl a reminder of?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 79,
+      "question": "What did Melanie and her family do while camping?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 80,
+      "question": "What kind of counseling and mental health services is Caroline interested in pursuing?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 81,
+      "question": "What workshop did Caroline attend recently?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 82,
+      "question": "What was discussed in the LGBTQ+ counseling workshop?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 83,
+      "question": "What motivated Caroline to pursue counseling?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 84,
+      "question": "What kind of place does Caroline want to create for people?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 85,
+      "question": "Did Melanie make the black and white bowl in the photo?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 86,
+      "question": "What kind of books does Caroline have in her library?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 87,
+      "question": "What was Melanie's favorite book from her childhood?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 88,
+      "question": "What book did Caroline recommend to Melanie?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 89,
+      "question": "What did Caroline take away from the book \"Becoming Nicole\"?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 90,
+      "question": "What are the new shoes that Melanie got used for?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 91,
+      "question": "What is Melanie's reason for getting into running?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 92,
+      "question": "What does Melanie say running has been great for?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 93,
+      "question": "What did Mel and her kids make during the pottery workshop?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 94,
+      "question": "What creative project do Mel and her kids do together besides pottery?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 95,
+      "question": "What did Caroline see at the council meeting for adoption?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 96,
+      "question": "What do sunflowers represent according to Caroline?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 97,
+      "question": "Why are flowers important to Melanie?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 98,
+      "question": "What inspired Caroline's painting for the art show?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 99,
+      "question": "How often does Melanie go to the beach with her kids?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 100,
+      "question": "What did Melanie and her family see during their camping trip last year?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 101,
+      "question": "How did Melanie feel while watching the meteor shower?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 102,
+      "question": "Whose birthday did Melanie celebrate recently?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 103,
+      "question": "Who performed at the concert at Melanie's daughter's birthday?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 104,
+      "question": "Why did Melanie choose to use colors and patterns in her pottery project?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 105,
+      "question": "What pet does Caroline have?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 106,
+      "question": "What pets does Melanie have?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 107,
+      "question": "Where did Oliver hide his bone once?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 108,
+      "question": "What activity did Caroline used to do with her dad?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 109,
+      "question": "What did Caroline make for a local church?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 110,
+      "question": "What did Caroline find in her neighborhood during her walk?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 111,
+      "question": "Which song motivates Caroline to be courageous?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 112,
+      "question": "Which  classical musicians does Melanie enjoy listening to?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 113,
+      "question": "Who is Melanie a fan of in terms of modern music?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 114,
+      "question": "How long has Melanie been creating art?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 115,
+      "question": "What advice does Caroline give for getting started with adoption?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 116,
+      "question": "What setback did Melanie face in October 2023?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 117,
+      "question": "What does Melanie do to keep herself busy during her pottery break?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 118,
+      "question": "What was the poetry reading that Caroline attended about?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 119,
+      "question": "What does Caroline's drawing symbolize for her?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 120,
+      "question": "How do Melanie and Caroline describe their journey through life together?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 121,
+      "question": "What happened to Melanie's son on their road trip?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 122,
+      "question": "How did Melanie's kids handle the accident?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 123,
+      "question": "How did Melanie feel about her family after the accident?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 124,
+      "question": "How did Melanie's children handle the accident?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 125,
+      "question": "How did Melanie feel after the accident?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 126,
+      "question": "What do Melanie's family give her?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 127,
+      "question": "How did Melanie feel about her family supporting her?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 128,
+      "question": "What books has Melanie read?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 129,
+      "question": "When did Melanie read the book \"nothing is impossible\"?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 130,
+      "question": "What kind of art does Caroline make?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 131,
+      "question": "What kind of pot did Mel and her kids make with clay?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 132,
+      "question": "What did Mel and her kids paint in their latest project in July 2023?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 133,
+      "question": "What precautionary sign did Melanie see at the caf\u00e9?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 134,
+      "question": "What painting did Melanie show to Caroline on October 13, 2023?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 135,
+      "question": "What kind of painting did Caroline share with Melanie on October 13, 2023?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 136,
+      "question": "What did the posters at the poetry reading say?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    },
+    {
+      "sample_id": "conv-26",
+      "qa_index": 137,
+      "question": "What did Melanie do after the road trip to relax?",
+      "status": "error",
+      "error": "Error getting collection: Collection [7f10de0e-ee22-4912-87a7-8dc776e77f2e] does not exist."
+    }
+  ]
+}

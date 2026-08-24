@@ -6,6 +6,7 @@ class ConsolidationEvaluator:
 
     def __init__(self):
         self.model = "llama3.1"
+        self.client = ollama.Client(host="http://host.docker.internal:11434")
 
     def evaluate(self, old_memory, new_memory):
 
@@ -84,7 +85,7 @@ New memory:
 {new_memory}
 """
 
-        response = ollama.chat(
+        response = self.client.chat(
             model=self.model,
             messages=[
                 {
